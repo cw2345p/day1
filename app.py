@@ -81,7 +81,7 @@ if df is not None:
         st.subheader("☁️ 워드클라우드")
         if counts:
             wc = WordCloud(
-                font_path='malgun.ttf',  # 윈도우는 파일명만 써도 기본적으로 인식합니다.
+                font_path='/usr/share/fonts/truetype/nanum/NanumGothic.ttf',  # 윈도우는 파일명만 써도 기본적으로 인식합니다.
                 width=800, height=450,
                 background_color='white'
             ).generate_from_frequencies(counts)
